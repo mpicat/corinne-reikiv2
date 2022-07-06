@@ -1,1 +1,25 @@
-<p>navigation works!</p>
+<nav>
+    <div class="nav-logo">
+        <button (click)="accueil()" aria-label="Accueil">
+            <img src="./assets/accueil/favicon.webp" alt="Logo Corinne Soares">
+        </button>
+    </div>
+
+    <div class="nav-btn">
+        <button (click)="toggle()" [ngClass]="{open: isOpen === true}" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="nav-menu" [ngClass]="{clicked: isOpen === true}">
+    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">A propos</button>
+    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Prestations</button>
+    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Formules et cartes cadeaux</button>
+    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Politique de confidentialité</button>
+    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Mentions légales</button>
+    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Contact</button>
+</div>
+

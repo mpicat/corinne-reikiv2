@@ -1,0 +1,100 @@
+$primary: rgba(150,17,99,255);
+$secondary: rgba(87,83,78,255);
+$tertiary: rgba(233,233,237,255);
+
+nav {
+    height: 85px;
+    background-color: white;
+    position: -webkit-sticky; 
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+.nav-logo {
+    button {
+        padding: 19px 0 0 50px;
+        color: $primary;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        img {
+            width: 45px;
+        }
+    }
+}
+
+.nav-btn {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    button {
+        cursor: pointer;
+        height: 25px;
+        width: 35px;
+        background: none;
+        border: none;
+        span {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 3px;
+            border-radius: 5px;
+            width: 35px;
+            background-color: $primary;
+            opacity: 1;
+            transition: .25s ease-in-out;
+        }
+        span:nth-child(1)  {
+            top: 0;
+        }
+        span:nth-child(2)  {
+            top: 10px;
+        }
+        span:nth-child(3)  {
+            top: 20px;
+        }
+    }
+    .open span:nth-child(1) {
+        top: 10px;
+        transform: rotate(135deg);
+    }
+    .open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+    .open span:nth-child(3) {
+        top: 10px;
+        transform: rotate(-135deg);
+    }
+}
+
+.nav-menu {
+    padding: 20vh 0 0 10px;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    transform: translateY(-100%);
+    transition: all 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    &__btn {
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 1.4rem;
+        text-align: left;
+        text-transform: uppercase;
+        color: $secondary;
+        font-weight: 300;
+    }
+}
+
+.clicked {
+    transform: translateY(0%);
+}

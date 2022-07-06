@@ -11,5 +11,4 @@ export class AccueilComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'corinne-reikiv2';
+
+  onActivate(event: any): void {
+    window.scroll(0,0);
+  }
 }
