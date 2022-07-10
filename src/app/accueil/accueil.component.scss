@@ -1,32 +1,17 @@
 $primary: rgba(150,17,99,255);
 $secondary: rgba(87,83,78,255);
-$tertiary: rgba(228,212,226,255);
-
-// allow to scroll 100%page
-.container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-}
-
-// allow to scroll 100%page
-header, .main-explaination, .main-techniques {
-    scroll-snap-align: start;
-    height: 100vh;
-}
 
 header {
-    height: 100vh;
-    position: relative;
-    .header-top {
+    height: 75vh;
+    .header-bg {
         position: relative;
         padding: 25px;
         background-image: url(/../assets/accueil/bg-flowers.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 55vh;
-        animation: appear 2s ease-in-out;
+        height: 45vh;
+        animation: appearBg 3s ease-in-out;
         .ov {
             background-image: linear-gradient(white,rgba(250,250,250,0) 90%, white);
             position: absolute;
@@ -37,20 +22,42 @@ header {
         }
     }
     h1 {
-        font-family: 'Dancing Script', cursive;
-        font-size: 3rem;
-        line-height: 3rem;
+        font-family: 'Amatic SC', cursive;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
         margin: 0;
         color: $primary;
-        padding: 0 25px;
-        animation: appear 4s ease-in-out;
+        padding: 10px 25px;
+        animation: appear 3s ease-in-out;
+        font-weight: 500;
     }
-    .quote {
-        font-size: 1.2rem;
-        font-weight: 300;
-        color: $secondary;
-        padding: 25px;
-        animation: appear 4s ease-in-out;
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $secondary;
+    padding: 0 25px;
+    font-family: 'Arima', cursive;
+    font-style: italic;
+    text-align: center;
+    animation: appear 3s ease-in-out;
+}
+
+.important {
+    font-weight: 500;
+    color: $primary;
+}
+
+@keyframes appearBg {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -58,11 +65,51 @@ header {
     0% {
         opacity: 0;
     }
+    50% {
+        opacity: 0;
+    }
     100% {
         opacity: 1;
     }
 }
 
+// explaination offers
+.main-explaination, .main-offers {
+    color: $secondary;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    row-gap: 30px;
+    &__presentation {
+        display: flex;
+        img {
+            height: 180px;
+            border-radius: 5px;
+        }
+    }
+    h2, p {
+        margin: 0;
+    }
+    h2 {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+}
+
+.link-btn {
+    color: white;
+    background-color: $primary;
+    padding: 10px 20px;
+    width: fit-content;
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+// contact
 .main-contact {
     background-color: $primary;
     padding: 25px;
@@ -82,5 +129,6 @@ header {
         border-radius: 25px;
         margin-bottom: 15px;
         text-align: center;
+        font-weight: 500;
     }
 }

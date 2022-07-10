@@ -1,6 +1,5 @@
 $primary: rgba(150,17,99,255);
 $secondary: rgba(87,83,78,255);
-$tertiary: rgba(233,233,237,255);
 
 nav {
     height: 85px;
@@ -9,18 +8,31 @@ nav {
     position: sticky;
     z-index: 2;
     top: 0;
+    animation: appear 3s ease-in-out;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .nav-logo {
     button {
-        padding: 19px 0 0 50px;
+        padding: 22px 0 0 30px;
         color: $primary;
         background-color: white;
         border: none;
         cursor: pointer;
         position: relative;
         img {
-            width: 45px;
+            width: 40px;
         }
     }
 }
@@ -28,7 +40,7 @@ nav {
 .nav-btn {
     position: absolute;
     top: 30px;
-    right: 50px;
+    right: 30px;
     button {
         cursor: pointer;
         height: 25px;
@@ -72,7 +84,7 @@ nav {
 }
 
 .nav-menu {
-    padding: 20vh 0 0 10px;
+    padding: 16vh 0 0 10px;
     position: fixed;
     z-index: 1;
     height: 100vh;

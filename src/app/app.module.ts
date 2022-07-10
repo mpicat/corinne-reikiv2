@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { FooterComponent } from './footer/footer.component';
 import { AProposComponent } from './a-propos/a-propos.component';
+import { ConfidentialiteComponent } from './confidentialite/confidentialite.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AProposComponent } from './a-propos/a-propos.component';
     NavigationComponent,
     AccueilComponent,
     FooterComponent,
-    AProposComponent
+    AProposComponent,
+    ConfidentialiteComponent
   ],
   imports: [
     BrowserModule,
