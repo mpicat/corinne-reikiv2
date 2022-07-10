@@ -1,0 +1,17 @@
+$primary: rgba(150,17,99,255);
+$secondary: rgba(87,83,78,255);
+
+.container {
+    font-weight: 300;
+    color: $secondary;
+    padding: 15px;
+    strong, a {
+        font-weight: 500;
+        color: $primary;
+    }
+    h1 {
+        font-size: 1.4rem;
+        color: $primary;
+        font-weight: 800;
+    }
+}

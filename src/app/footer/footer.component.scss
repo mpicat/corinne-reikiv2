@@ -3,7 +3,6 @@ $secondary: rgba(87,83,78,255);
 
 footer {
     position: relative;
-    z-index: -2;
     background-color: $secondary;
     padding: 15px 10px 25px;
     display: flex;
@@ -48,5 +47,15 @@ footer {
     text-align: center;
     p {
         margin: 0;
+    }
+}
+
+.footer-legal {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    a {
+        color: white;
+        text-decoration: none;
     }
 }

@@ -9,12 +9,10 @@
 </nav>
 
 <div class="nav-menu" [ngClass]="{clicked: isOpen === true}">
-    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Accueil</button>
-    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">A propos</button>
-    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Prestations</button>
-    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Formules et cartes cadeaux</button>
-    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Politique de confidentialité</button>
-    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Mentions légales</button>
-    <button class="nav-menu__btn" (clic)="toggle(); aPropos()">Contact</button>
+    <button class="nav-menu__btn" (click)="accueil()">Accueil</button>
+    <button class="nav-menu__btn" (click)="aPropos()">A propos</button>
+    <button class="nav-menu__btn" (click)="aPropos()">Prestations</button>
+    <button class="nav-menu__btn" (click)="aPropos()">Formules et cartes cadeaux</button>
+    <button class="nav-menu__btn" (click)="aPropos()">Contact</button>
 </div>
 
