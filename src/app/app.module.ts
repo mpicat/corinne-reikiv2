@@ -8,6 +8,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { FooterComponent } from './footer/footer.component';
 import { AProposComponent } from './a-propos/a-propos.component';
 import { ConfidentialiteComponent } from './confidentialite/confidentialite.component';
+import { MentionsComponent } from './mentions/mentions.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ConfidentialiteComponent } from './confidentialite/confidentialite.comp
     AccueilComponent,
     FooterComponent,
     AProposComponent,
-    ConfidentialiteComponent
+    ConfidentialiteComponent,
+    MentionsComponent
   ],
   imports: [
     BrowserModule,

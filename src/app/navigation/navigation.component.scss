@@ -95,10 +95,9 @@ nav {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    &__btn {
+    a {
         cursor: pointer;
-        border: none;
-        background: none;
+        text-decoration: none;
         font-size: 1.4rem;
         text-align: left;
         text-transform: uppercase;

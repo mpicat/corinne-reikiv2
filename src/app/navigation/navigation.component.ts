@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -8,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
@@ -17,20 +16,6 @@ export class NavigationComponent implements OnInit {
 
   toggle() {
     this.isOpen = !this.isOpen;
-  }
-
-  aPropos() {
-    this.router.navigateByUrl('apropos');
-  }
-
-  accueil() {
-    if (this.isOpen === true) {
-      this.router.navigateByUrl('');
-      this.isOpen = false;
-    } else {
-      this.router.navigateByUrl('');
-      this.isOpen = false;
-    }
   }
 
 }

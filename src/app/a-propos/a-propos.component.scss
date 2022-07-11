@@ -1,0 +1,51 @@
+$primary: rgba(150,17,99,255);
+$secondary: rgba(87,83,78,255);
+
+.container {
+    color: $secondary;
+    font-weight: 300;
+}
+
+header {
+    height: 85vh;
+    position: relative;
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: 400;
+        padding: 60px 25px 0;
+    }
+    img {
+        width: 100%;
+        position: absolute;
+        top: 320px;
+        left: 0;
+    }
+}
+
+main {
+    .important, a {
+        font-weight: 500;
+        color: $primary;
+    }
+    img {
+        width: 100%;
+    }
+    .main-explaination {
+        padding-top: 15px;
+    }
+    .main-explaination, .main-techniques, .main-formation, .main-medias {
+        p {
+            padding: 10px 15px;
+        }
+    }
+    .quote {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: $secondary;
+        padding: 0 25px;
+        font-family: 'Arima', cursive;
+        font-style: italic;
+        text-align: center;
+    }
+}

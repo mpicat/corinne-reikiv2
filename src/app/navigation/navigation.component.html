@@ -9,10 +9,10 @@
 </nav>
 
 <div class="nav-menu" [ngClass]="{clicked: isOpen === true}">
-    <button class="nav-menu__btn" (click)="accueil()">Accueil</button>
-    <button class="nav-menu__btn" (click)="aPropos()">A propos</button>
-    <button class="nav-menu__btn" (click)="aPropos()">Prestations</button>
-    <button class="nav-menu__btn" (click)="aPropos()">Formules et cartes cadeaux</button>
-    <button class="nav-menu__btn" (click)="aPropos()">Contact</button>
+    <a [routerLink]="['']" (click)="toggle()">Accueil</a>
+    <a [routerLink]="['apropos']" (click)="toggle()">A propos</a>
+    <a [routerLink]="['']" (click)="toggle()">Prestations</a>
+    <a [routerLink]="['']" (click)="toggle()">Formules et cartes cadeaux</a>
+    <a [routerLink]="['']" (click)="toggle()">Contact</a>
 </div>
 

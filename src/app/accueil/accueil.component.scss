@@ -2,7 +2,7 @@ $primary: rgba(150,17,99,255);
 $secondary: rgba(87,83,78,255);
 
 header {
-    height: 75vh;
+    height: 80vh;
     .header-bg {
         position: relative;
         padding: 25px;
@@ -10,7 +10,7 @@ header {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 45vh;
+        height: 50vh;
         animation: appearBg 3s ease-in-out;
         .ov {
             background-image: linear-gradient(white,rgba(250,250,250,0) 90%, white);
