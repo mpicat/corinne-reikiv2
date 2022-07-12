@@ -2,15 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  selector: 'app-reiki',
+  templateUrl: './reiki.component.html',
+  styleUrls: ['./reiki.component.scss']
 })
-export class FooterComponent implements OnInit {
+export class ReikiComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
     AOS.init();
   }
+
 }

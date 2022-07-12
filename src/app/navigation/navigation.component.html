@@ -6,13 +6,18 @@
             <span></span>
         </button>
     </div>
+    <div class="nav-line">
+        <a [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+        <a [routerLink]="['apropos']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">A propos</a>
+        <a [routerLink]="['prestations']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Prestations</a>
+        <a [routerLink]="['formules']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Formules et cartes cadeaux</a>
+    </div>
 </nav>
 
 <div class="nav-menu" [ngClass]="{clicked: isOpen === true}">
     <a [routerLink]="['']" (click)="toggle()">Accueil</a>
     <a [routerLink]="['apropos']" (click)="toggle()">A propos</a>
-    <a [routerLink]="['']" (click)="toggle()">Prestations</a>
-    <a [routerLink]="['']" (click)="toggle()">Formules et cartes cadeaux</a>
-    <a [routerLink]="['']" (click)="toggle()">Contact</a>
+    <a [routerLink]="['prestations']" (click)="toggle()">Prestations</a>
+    <a [routerLink]="['formules']" (click)="toggle()">Formules et<br> cartes cadeaux</a>
 </div>
 

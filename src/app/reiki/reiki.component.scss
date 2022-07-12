@@ -1,0 +1,41 @@
+$primary: rgba(150,17,99,255);
+$secondary: rgba(87,83,78,255);
+
+.container {
+    color: $secondary;
+    font-weight: 300;
+}
+
+header {
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: 400;
+        padding: 60px 10px 15px;
+        margin: 0;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.soin, .formations, .programme {
+    padding: 15px;
+    border-radius: 5px;
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .price {
+        color: $primary;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+.important {
+    font-weight: 500;
+    color: $primary;
+}

@@ -34,13 +34,17 @@ header {
 }
 
 .quote {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
     color: $secondary;
     padding: 0 25px;
     font-family: 'Arima', cursive;
     font-style: italic;
     text-align: center;
+}
+
+.side {
+    text-align: left;
     animation: appear 3s ease-in-out;
 }
 
@@ -83,17 +87,24 @@ header {
     row-gap: 30px;
     &__presentation {
         display: flex;
+        column-gap: 10px;
         img {
             height: 180px;
             border-radius: 5px;
         }
     }
+
     h2, p {
         margin: 0;
     }
     h2 {
         font-size: 1.1rem;
         text-transform: uppercase;
+    }
+    &__techniques, &__top, &__bottom {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
     }
 }
 
@@ -107,28 +118,69 @@ header {
     margin: auto;
     border-radius: 25px;
     text-decoration: none;
+    outline: none;
 }
 
-// contact
-.main-contact {
-    background-color: $primary;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    h2 {
-        font-size: 1.6rem;
+@media screen and (min-width: 768px) {
+    header {
+        height: 85vh;
+        h1 {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
     }
-    p, a {
-        width: 200px;
-        padding: 10px;
-        background-color: white;
-        color: $primary;
-        text-decoration: none;
-        border-radius: 25px;
-        margin-bottom: 15px;
-        text-align: center;
-        font-weight: 500;
+    main {
+        display: flex;
+        justify-content: center;
+        column-gap: 25px;
+    }
+    .main-explaination, .main-offers {
+        width: 50%;
+        padding: 0 20px;
+        &__presentation {
+            img {
+                height: 230px;
+            }
+        }
     }
 }
+
+@media screen and (min-width: 992px) {
+    header {
+        height: 85vh;
+        position: relative;
+        .header-bg {
+            height: 70vh;
+        }
+        h1 {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+            position: absolute;
+            top: 45vh;
+            left: 25px;
+        }
+        p {
+            position: absolute;
+            top: 65vh;
+            left: 25px;
+        }
+    }
+    .quote {
+        font-size: 1.2rem;
+    }
+    .main-explaination, .main-offers {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        &__presentation {
+            img {
+                height: 180px;
+            }
+        }
+        div {
+            width: 50%;
+        }
+    }
+
+}
+

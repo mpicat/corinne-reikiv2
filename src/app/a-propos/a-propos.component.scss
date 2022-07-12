@@ -27,6 +27,7 @@ main {
     .important, a {
         font-weight: 500;
         color: $primary;
+        outline: none;
     }
     img {
         width: 100%;
@@ -48,4 +49,18 @@ main {
         font-style: italic;
         text-align: center;
     }
+    .link-btn {
+        color: white;
+        background-color: $primary;
+        padding: 10px 20px;
+        width: fit-content;
+        text-align: center;
+        font-weight: 500;
+        margin: auto;
+        border-radius: 25px;
+        text-decoration: none;
+        display: flex;
+        outline: none;
+    }
 }
+

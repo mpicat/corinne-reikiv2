@@ -47,6 +47,7 @@ nav {
         width: 35px;
         background: none;
         border: none;
+        outline: none;
         span {
             display: block;
             position: absolute;
@@ -103,9 +104,38 @@ nav {
         text-transform: uppercase;
         color: $secondary;
         font-weight: 300;
+        outline: none;
     }
 }
 
 .clicked {
     transform: translateY(0%);
+}
+
+.nav-line {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-line {
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 8%;
+        a {
+            color: $secondary;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 400;
+            outline: none;
+        }
+        .active {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+    .nav-btn {
+        display: none;
+    }
 }

@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AProposComponent } from './a-propos/a-propos.component';
 import { ConfidentialiteComponent } from './confidentialite/confidentialite.component';
 import { MentionsComponent } from './mentions/mentions.component';
+import { FormulesComponent } from './formules/formules.component';
+import { PrestationsComponent } from './prestations/prestations.component';
+import { ReikiComponent } from './reiki/reiki.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { MentionsComponent } from './mentions/mentions.component';
     FooterComponent,
     AProposComponent,
     ConfidentialiteComponent,
-    MentionsComponent
+    MentionsComponent,
+    FormulesComponent,
+    PrestationsComponent,
+    ReikiComponent
   ],
   imports: [
     BrowserModule,
