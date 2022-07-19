@@ -15,6 +15,9 @@ header {
         padding: 60px 0 0;
         margin: 0;
     }
+    p {
+        text-align: justify;
+    }
 }
 
 a {
@@ -38,4 +41,34 @@ a {
 .important {
     font-weight: 500;
     color: $primary;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 10vw;
+    }
+    header h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    main a div:hover {
+        background-color: $primary;
+        color: white;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            width: 50%;
+            div {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        padding: 0 15vw;
+    }
 }

@@ -11,7 +11,7 @@ header {
         font-size: 3rem;
         line-height: 3.5rem;
         font-weight: 400;
-        padding: 60px 10px 15px;
+        padding: 60px 15px 15px;
         margin: 0;
     }
     img {
@@ -38,4 +38,42 @@ header {
 .important {
     font-weight: 500;
     color: $primary;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 10vw;
+    }
+    header {
+        h1 {
+            font-size: 3.5rem;
+            line-height: 4rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        img {
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+    }
+    .soin, .formations, .programme {
+        padding: 15px 0;
+        h2 {
+            font-size: 1.5rem;
+        }
+        .price {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        padding: 0 15vw;
+    }
+    header {
+        img {
+            max-width: 750px;
+        }
+    }
 }

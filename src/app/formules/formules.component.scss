@@ -15,6 +15,9 @@ header {
         padding: 60px 0 0;
         margin: 0;
     }
+    p {
+        text-align: justify;
+    }
 }
 
 .formule {
@@ -32,5 +35,29 @@ header {
         margin: 0;
         color: $primary;
         font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 10vw;
+    }
+    header h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    main {
+        display: flex;
+
+    }
+    .formule {
+        margin: 15px;
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        padding: 0 15vw;
     }
 }

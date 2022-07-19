@@ -4,14 +4,34 @@ $secondary: rgba(87,83,78,255);
 .container {
     font-weight: 300;
     color: $secondary;
-    padding: 15px;
+    padding: 0 15px;
+    text-align: justify;
     strong {
         font-weight: 500;
         color: $primary;
     }
     h1 {
-        font-size: 1.4rem;
         color: $primary;
-        font-weight: 800;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: 400;
+        padding-top: 60px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 10vw;
+        header h1 {
+            font-size: 3.5rem;
+            line-height: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        padding: 0 15vw;
     }
 }

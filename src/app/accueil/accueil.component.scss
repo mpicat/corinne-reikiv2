@@ -77,6 +77,10 @@ header {
     }
 }
 
+main {
+    text-align: justify;
+}
+
 // explaination offers
 .main-explaination, .main-offers {
     color: $secondary;
@@ -85,11 +89,12 @@ header {
     flex-direction: column;
     padding: 40px 20px;
     row-gap: 30px;
-    &__presentation {
+    div {
         display: flex;
-        column-gap: 10px;
+        flex-direction: column;
+        row-gap: 30px;
         img {
-            height: 180px;
+            width: 100%;
             border-radius: 5px;
         }
     }
@@ -101,7 +106,7 @@ header {
         font-size: 1.1rem;
         text-transform: uppercase;
     }
-    &__techniques, &__top, &__bottom {
+    &__techniques {
         display: flex;
         flex-direction: column;
         row-gap: 30px;
@@ -115,7 +120,7 @@ header {
     width: fit-content;
     text-align: center;
     font-weight: 500;
-    margin: auto;
+    margin: 0 auto;
     border-radius: 25px;
     text-decoration: none;
     outline: none;
@@ -123,31 +128,31 @@ header {
 
 @media screen and (min-width: 768px) {
     header {
-        height: 85vh;
+        height: 75vh;
         h1 {
             font-size: 4rem;
             line-height: 4rem;
+            padding-left: 10vw;
+        }
+        p {
+            padding-left: 10vw;
         }
     }
     main {
         display: flex;
         justify-content: center;
-        column-gap: 25px;
+        padding: 0 10vw;
     }
     .main-explaination, .main-offers {
         width: 50%;
-        padding: 0 20px;
-        &__presentation {
-            img {
-                height: 230px;
-            }
+        h2 {
+            text-align: left;
         }
     }
 }
 
 @media screen and (min-width: 992px) {
     header {
-        height: 85vh;
         position: relative;
         .header-bg {
             height: 70vh;
@@ -157,28 +162,33 @@ header {
             line-height: 4.5rem;
             position: absolute;
             top: 45vh;
-            left: 25px;
+            left: 20vw;
+            padding: 0 20px;
         }
         p {
             position: absolute;
             top: 65vh;
-            left: 25px;
+            left: 20vw;
+            padding: 0 20px;
         }
     }
     .quote {
         font-size: 1.2rem;
     }
-    .main-explaination, .main-offers {
-        display: flex;
-        flex-direction: row;
-        column-gap: 30px;
-        &__presentation {
-            img {
-                height: 180px;
-            }
-        }
+    main {
+        padding: 0 20vw;  
+        column-gap: 60px;  
+    }
+    .main-explaination {
         div {
-            width: 50%;
+            flex-direction: row;
+            column-gap: 30px;
+            p {
+                width: 55%;
+            }
+            img {
+                width: 45%;
+            }
         }
     }
 
