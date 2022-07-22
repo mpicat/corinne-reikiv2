@@ -127,7 +127,8 @@ main {
     .main-explaination, .main-formation {
         &__top, &__bottom {
             img {
-                width: 30%;
+                width: 40%;
+                min-width: 300px;
             }
         }
     }
