@@ -6,7 +6,7 @@ header {
     .header-bg {
         position: relative;
         padding: 25px;
-        background-image: url(/../assets/accueil/bg-flowers.webp);
+        background-image: url(/./assets/accueil/bg-flowers.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -181,13 +181,10 @@ main {
     }
     .main-explaination {
         div {
-            flex-direction: row;
-            column-gap: 30px;
-            p {
-                width: 55%;
-            }
             img {
-                width: 45%;
+                width: 55%;
+                min-width: 250px;
+                margin: 0 auto;
             }
         }
     }
